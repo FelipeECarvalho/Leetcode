@@ -1,15 +1,14 @@
-﻿using System;
+﻿namespace Leetcode;
 
-public Class()
+public sealed class MergeAlternately
 {
-
-    public string MergeAlternately(string word1, string word2)
+    public static string Solution(string word1, string word2)
     {
+        string output = "";
+        
         int largestWord = word1.Length > word2.Length
             ? word1.Length
             : word2.Length;
-
-        string output = "";
 
         for (int i = 0; i < largestWord; i++)
         {
